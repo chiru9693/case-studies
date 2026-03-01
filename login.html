@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>SmartRetail - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="navbar">
+    
+        <h2>🛍 SmartRetail</h2>
+    
+
+    <ul class="nav-links">
+        <li><a href="index.html" class="nav-item">Home</a></li>
+        <li><a href="products.html" class="nav-item">Products</a></li>
+        <li><a href="cart.html" class="nav-item">Cart</a></li>
+        <li><a href="about.html" class="nav-item">About</a></li>
+        <li><a href="contact.html" class="nav-item">Contact</a></li>
+        <li><a href="login.html" class="nav-item active">Login</a></li>
+         <li><a href="signup.html" class="nav-item">Signup</a></li>
+         <li><a href="checkout.html" class="nav-item">Checkout</a></li>
+    </ul>
+</div>
+<div class="container" style="text-align:center;">
+    <div id="loginSection">
+        <h2>Login</h2>
+        <br>
+        <form onsubmit="event.preventDefault(); login();">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginMessage" style="margin-top:10px;"></p>
+    </div>
+    <div id="logoutSection" style="display:none;">
+        <h2 id="welcomeText"></h2>
+        <br>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+</div>
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
